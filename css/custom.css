@@ -1,4 +1,82 @@
 :root {
-    --mdb-primary: #35357c;
-    --mdb-primary-rgb: R, G, B;
+    /* Color principal */
+    --mdb-primary: #023e7d;
+    --mdb-primary-rgb: 2, 62, 125;
+
+    --mdb-secondary: #006494;
+    --mdb-secondary-rgb: 0, 100, 148;
+
+    --mdb-success: #00b74a;
+    --mdb-danger: #f93154;
+    --mdb-warning: #ffa900;
+    --mdb-info: #00A6FB;
+}
+
+.btn-primary {
+    --mdb-btn-bg: #023e7d;
+    --mdb-btn-border-color: #023e7d;
+    --mdb-btn-hover-bg: #012f60;
+    --mdb-btn-hover-border-color: #012f60;
+    --mdb-btn-focus-bg: #012f60;
+    --mdb-btn-focus-border-color: #012f60;
+    --mdb-btn-active-bg: #01254d;
+    --mdb-btn-active-border-color: #01254d;
+    --mdb-btn-disabled-bg: #023e7d;
+    --mdb-btn-disabled-border-color: #023e7d;
+    --mdb-btn-focus-shadow-rgb: 2, 62, 125;
+}
+
+/* Sidebar: íconos y estado activo/hover */
+#sidebarMenu .list-group-item i {
+    color: #0353A4;
+}
+
+#sidebarMenu .list-group-item:hover,
+#sidebarMenu .list-group-item.active {
+    background-color: #0353A4;
+    color: #fff;
+}
+
+#sidebarMenu .list-group-item.active i,
+#sidebarMenu .list-group-item:hover i {
+    color: #fff;
+}
+
+/* Navbar superior*/
+#main-navbar {
+    background-color: #023e7d !important;
+}
+
+/* Forzar blanco en todo el contenido del navbar, incluyendo íconos sueltos */
+#main-navbar .nav-link,
+#main-navbar .fas,
+#main-navbar .fab,
+#main-navbar .far {
+    color: #ffffff !important;
+}
+
+/* El ícono de búsqueda específicamente (no es un nav-link) */
+#main-navbar .input-group-text {
+    background-color: transparent;
+    border: none;
+}
+
+#main-navbar .input-group-text i {
+    color: #ffffff !important;
+}
+
+/* Texto del placeholder dentro del buscador, para que también contraste */
+#main-navbar input::placeholder {
+    color: #7D8597;
+}
+
+/* Cuadro de búsqueda semitransparente */
+#main-navbar input[type="search"] {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+#main-navbar input[type="search"]::placeholder {
+    color: rgba(255, 255, 255, 0.75);
 }
